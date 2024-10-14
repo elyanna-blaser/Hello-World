@@ -29,6 +29,20 @@ function draw() {
   // Set the fill color to the new random color
   fill(r, g, b, random);
   arc(0, 0, 600, 600, 0, sc * 6, PIE);
+
+  // show current time
+  push();
+  rotate(90);
+  textSize(400);
+  fill('white');
+  text(hr, -200, 0);
+  if (mn < 10) {
+    text('0' + mn, -200, 300);
+  }
+  else {
+    text(mn, -200, 300);
+  }
+  pop();
   
 }
 
